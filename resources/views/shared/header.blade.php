@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Competency</a>
+      <a class="navbar-brand" href="{{url('/')}}">Competency</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
