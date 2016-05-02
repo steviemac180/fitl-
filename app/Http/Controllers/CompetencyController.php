@@ -17,7 +17,12 @@ class CompetencyController extends Controller
      */
     public function index()
     {
-        //
+        $competencies= Competency::all();
+        
+        $data = array();
+        $data['objects'] = $competencies;
+
+        return view('competencies.index', $data);
     }
 
     /**

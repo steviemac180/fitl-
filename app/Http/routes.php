@@ -24,3 +24,5 @@ Route::get('about', 'PagesController@about');
 Route::get('contact', 'PagesController@contact');
 
 Route::get('competencies/{competency}', 'CompetencyController@show');
+
+Route::get('competencies', 'CompetencyController@index');
