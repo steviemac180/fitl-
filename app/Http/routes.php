@@ -22,3 +22,5 @@ Route::get('/welcome', function () {
 Route::get('about', 'PagesController@about');
 
 Route::get('contact', 'PagesController@contact');
+
+Route::get('competencys/{competency}', 'CompetencyController@show');
