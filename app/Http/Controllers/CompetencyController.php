@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Competency;
 
 class CompetencyController extends Controller
 {
@@ -48,9 +49,12 @@ class CompetencyController extends Controller
      */
     public function show($id)
     {
-        echo $id;
-        exit;
-        return view('competencys/show');
+        $data =array();
+        $competency = Competency::findOrFail($id);
+        $data['object'] = $competency;
+
+
+        return view('competencies/show', $data);
     }
 
     /**

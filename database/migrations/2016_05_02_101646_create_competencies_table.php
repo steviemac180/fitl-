@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCompetencysTable extends Migration
+class CreateCompetenciesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class CreateCompetencysTable extends Migration
      */
     public function up()
     {
-        Schema::create('competencys', function (Blueprint $table) {
+        Schema::create('competencies', function (Blueprint $table) {
             $table->increments('id');
             $table->string('staff');
             $table->string('assay');
@@ -31,6 +31,6 @@ class CreateCompetencysTable extends Migration
      */
     public function down()
     {
-        Schema::drop('competencys');
+        Schema::drop('competencies');
     }
 }
