@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>
-			Competency Database
-		</title>
-	</head>
-	<body>
+@extends('layouts.master')		
+		
+@section('content')
 		<h1>
 			{{$object->staff}}
 		</h1>
@@ -23,6 +18,4 @@
 		<pre>
 			<?php echo $object->review_due;?>
 		</pre>
-
-	</body>
-</html>
+@endsection
