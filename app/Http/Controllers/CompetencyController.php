@@ -32,7 +32,11 @@ class CompetencyController extends Controller
      */
     public function create()
     {
-        //
+        $competency = new Competency;
+        $data = array();
+        $data['competency'] = $competency;
+        return view('competencies.create', $data);
+
     }
 
     /**
